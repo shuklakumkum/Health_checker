@@ -1,0 +1,5 @@
+fastapi==0.128.0
+uvicorn==0.40.0
+requests==2.32.5
+python-dateutil==2.9.0.post0
+pydantic==2.12.5
