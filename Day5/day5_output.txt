@@ -1,0 +1,73 @@
+input(POST)
+
+ google.com
+
+ output
+
+{
+  "url": "google.com",
+  "status": "online",
+  "status_code": 200,
+  "uses_https": false,
+  "timestamp": "2026-01-13T19:53:09.970289"
+}
+
+input(GET)
+
+google.com
+
+output
+
+[
+  {
+    "url": "www.google.com",
+    "status": "offline",
+    "status_code": null,
+    "uses_https": false,
+    "timestamp": "2026-01-13T19:21:37.772228",
+    "error": "Invalid URL 'www.google.com': No scheme supplied. Perhaps you meant https://www.google.com?"
+  },
+  {
+    "url": "google.com",
+    "status": "online",
+    "status_code": 200,
+    "uses_https": false,
+    "timestamp": "2026-01-13T19:30:05.779724"
+  },
+  {
+    "url": "google.com",
+    "status": "online",
+    "status_code": 200,
+    "uses_https": false,
+    "timestamp": "2026-01-13T19:38:04.867347"
+  }
+]
+
+input(POST)
+
+ github.com
+
+ output
+
+{
+  "url": "github.com",
+  "status": "online",
+  "status_code": 200,
+  "uses_https": false,
+  "timestamp": "2026-01-13T20:10:56.504180"
+}
+input(GET)
+
+github.com
+
+output
+
+[
+  {
+    "url": "github.com",
+    "status": "online",
+    "status_code": 200,
+    "uses_https": false,
+    "timestamp": "2026-01-13T20:10:56.504180"
+  }
+]
