@@ -1,0 +1,65 @@
+input
+
+{
+  "url": "https://httpbin.org/"
+}
+
+
+output
+
+{
+  "url": "https://httpbin.org/",
+  "status": "ok",
+  "uses_https": true,
+  "response_time": null,
+  "status_code": null,
+  "error": null,
+  "vulnerabilities": {
+    "vulnerabilities_found": [],
+    "checks_performed": [
+      "/.git/HEAD",
+      "/.git/config",
+      "/.env",
+      "/config.php",
+      "/backup.sql",
+      "/backup/",
+      "/admin/",
+      "/.DS_Store"
+    ],
+    "total_found": 0,
+    "severity": "none",
+    "error": null
+  }
+}
+input
+
+{
+  "url": "https://example.com/"
+}
+
+output
+
+{
+  "url": "https://example.com/",
+  "status": "ok",
+  "uses_https": true,
+  "response_time": null,
+  "status_code": null,
+  "error": null,
+  "vulnerabilities": {
+    "vulnerabilities_found": [],
+    "checks_performed": [
+      "/.git/HEAD",
+      "/.git/config",
+      "/.env",
+      "/config.php",
+      "/backup.sql",
+      "/backup/",
+      "/admin/",
+      "/.DS_Store"
+    ],
+    "total_found": 0,
+    "severity": "none",
+    "error": null
+  }
+}
