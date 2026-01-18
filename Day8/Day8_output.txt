@@ -1,0 +1,103 @@
+-------VALID INPUT-------
+PUT
+input
+{
+"url": "https://www.google.com"
+}
+output
+
+{
+  "website_status": "online",
+  "http_status": 200,
+  "response_time_ms": 1959.1309999999999
+}
+ 
+GET
+output
+{
+  "message": "API is running"
+}
+
+----------INVALID--------
+input
+{
+"url": "www.google.com"
+}
+output
+
+{
+  "detail": [
+    {
+      "type": "url_parsing",
+      "loc": [
+        "body",
+        "url"
+      ],
+      "msg": "Input should be a valid URL, relative URL without a base",
+      "input": "www.google.com",
+      "ctx": {
+        "error": "relative URL without a base"
+      }
+    }
+  ]
+}
+ 
+GET
+output
+{
+  "message": "API is running"
+}
+Edge cases
+
+input
+
+{
+  "url": "https://www.nonexistentwebsite123456.com"
+}
+
+
+output
+
+
+{
+  "website_status": "offline",
+  "reason": "connection Failed",
+  "details": "HTTPSConnectionPool(host='www.nonexistentwebsite123456.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.nonexistentwebsite123456.com', port=443): Failed to resolve 'www.nonexistentwebsite123456.com' ([Errno 11001] getaddrinfo failed)\"))",
+  "suggestion": "check the URL or your internet connection"
+}
+
+GET
+output
+{
+  "message": "API is running"
+}
+
+-------performance tests-----
+input
+{
+    "url": "https://www.google.com"
+}
+
+output
+
+{
+  "website_status": "offline",
+  "reason": "Timeout",
+  "details": "Website did not respond in 5 seconds",
+  "suggestion": "check your network connection"
+}
+
+--------extra edge cases------
+input
+
+ {
+    "url": "https://example.com/?param=%00"
+ }
+
+ output
+
+ {
+  "website_status": "online",
+  "http_status": 200,
+  "response_time_ms": 2447.347
+}
