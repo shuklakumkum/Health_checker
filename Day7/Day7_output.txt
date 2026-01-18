@@ -1,0 +1,4 @@
+README,API_DOCS,SETUP created
+code docstrings added
+Feature merged to main
+v1.0.0 released

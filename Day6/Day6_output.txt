@@ -1,0 +1,67 @@
+input
+
+https://github.com
+
+
+output
+
+{
+  "url": "https://github.com",
+  "https": true,
+  "ssl": {
+    "valid": true
+  },
+  "security_headers": {
+    "hsts": false,
+    "csp": false,
+    "x_frame": true,
+    "x_content": true
+  },
+  "vulnerabilities": [
+    "example vuln"
+  ],
+  "response_time": 1200,
+  "security_score": {
+    "score": 70,
+    "max_score": 100,
+    "grade": "c",
+    "recommendations": [
+      "Add security headers",
+      "Fix vulnerabilities",
+      "Improve performance"
+    ]
+  }
+}
+
+input
+
+https://example.com
+output
+
+{
+  "url": "https://example.com",
+  "https": true,
+  "ssl": {
+    "valid": true
+  },
+  "security_headers": {
+    "hsts": false,
+    "csp": false,
+    "x_frame": true,
+    "x_content": true
+  },
+  "vulnerabilities": [
+    "example vuln"
+  ],
+  "response_time": 1200,
+  "security_score": {
+    "score": 70,
+    "max_score": 100,
+    "grade": "c",
+    "recommendations": [
+      "Add security headers",
+      "Fix vulnerabilities",
+      "Improve performance"
+    ]
+  }
+}

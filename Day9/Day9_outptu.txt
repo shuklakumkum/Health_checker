@@ -1,0 +1,53 @@
+input(POST)
+
+https://www.google.com
+
+output
+
+{
+  "url": "https://www.google.com",
+  "status": "success",
+  "response_time_ms": 2175.83
+}
+
+GET
+
+{
+  "message": "Day9 API running"
+}
+
+input(POST)
+
+https://example.com
+
+output
+
+{
+  "url": "https://example.com",
+  "status": "success",
+  "response_time_ms": 1538
+}
+
+GET
+
+{
+  "message": "Day9 API running"
+}
+
+input(POST)
+
+https://thiswebsitedoesnotexist12345.com
+
+output
+
+{
+  "url": "https://thiswebsitedoesnotexist12345.com",
+  "status": "error",
+  "message": "HTTPSConnectionPool(host='thiswebsitedoesnotexist12345.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='thiswebsitedoesnotexist12345.com', port=443): Failed to resolve 'thiswebsitedoesnotexist12345.com' ([Errno 11001] getaddrinfo failed)\"))"
+}
+
+GET
+
+{
+  "message": "Day9 API running"
+}

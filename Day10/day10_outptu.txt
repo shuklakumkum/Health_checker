@@ -1,0 +1,16 @@
+Security Review:
+validation
+error handling 
+Inptu validation
+Error handling
+Safe defaults
+
+Configuration:
+API_HOST
+API_PORT
+SCAN_TIMEOUT
+DATABASE_URL
+
+
+
+
